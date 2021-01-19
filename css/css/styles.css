@@ -1,0 +1,145 @@
+body {
+  background-color: rgb(235, 235, 212);
+  margin: 0px;
+}
+
+header {
+  background-color: #0e119c;
+  color: #ffffff;
+  padding: 15px;
+  position: fixed;
+
+  top: 0;
+  right: 0;
+
+  z-index: 999999;
+}
+
+#table {
+  margin-top: 200px;
+}
+
+/* Обращение по ID имеет высший приоритет */
+#email-link {
+  color: rgb(160, 15, 111);
+}
+
+.add-menu .movie-link {
+  color: #333;
+}
+
+a {
+  color: #fff;
+}
+
+.add-menu a {
+  color: #ffc7c7;
+}
+
+.section {
+  background-color: aqua;
+  padding: 15px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0px;
+  margin: 15px 0px 0px 0px;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px;
+  background-image: url("../banner.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* Цвета в css, форматы:
+    1 - Словами: yellow, red, green...
+    2 - HEX: #f3f3f3, #fff, #03f02f
+    3 - rgb: rgb(196, 196, 196)
+    4 - rgba: rgba(196, 196, 196, 0.5) */
+
+.form label {
+  color: rgb(117, 117, 117);
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form input {
+  border: none;
+  outline: none;
+}
+
+.form .group-form input {
+  width: 250px;
+  height: 30px;
+  border-bottom: 2px solid blue;
+  background-color: transparent;
+}
+
+.form textarea {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  outline: none;
+}
+
+.form textarea:focus {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.form .button input,
+.button button {
+  background-color: rgb(65, 28, 199);
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.button button:hover {
+  background-color: rgb(210, 196, 255);
+  color: #000;
+}
+
+/* 
+position - relative === "относительный"
+         - fixed    === "зафиксированный" относительно body
+         - absolute === "абсолютный" относительно родительского элемента со свойством position (relative, absolute) */
+
+.position-relative {
+  position: relative;
+}
+
+.position-relative p {
+  position: relative;
+  z-index: 1;
+}
+
+.img-wrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 0;
+}
+
+footer ol li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer ol li a:active {
+  color: blue;
+}
+
+footer ol li a:hover {
+  text-decoration: underline;
+  color: red;
+}

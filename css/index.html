@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="html, css, javascript, web-development">
+    <meta name="description" content="You'll learn frontend for a month">
+    <title>My First HTML Page</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <section id="header">
+      <header>
+        <div>
+          <!-- Absolute path: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/1200px-Tesla_T_symbol.svg.png -->
+          <!-- Relative path: ./logo.jpg -->
+          <img src="./logo.jpg" alt="Tesla Logo" width="50">
+        </div>
+        <nav>
+          <ul class="menu">
+            <li>
+              Breaking Bad
+            </li>
+            <li>
+              Game of Thrones
+            </li>
+            <li>
+              <a class="movie-link" href="https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_(miniseries)" target="_blank">
+                The Queen's Gambit
+              </a>
+            </li>
+          </ul>
+          <ul class="menu add-menu">
+            <li>
+              <a id="email-link" class="movie-link" href="mailto:tomkovich.ya@yandex.by">My Email</a>
+            </li>
+            <li>
+              <a href="tel:103">Call me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <hr>
+    <section id="table" class="section">
+      <h1>To Be Frontend Developer</h1>
+      <!-- 1 - true, 0 - false -->
+      <table border="1"> 
+        <thead>
+          <tr>
+            <th>
+              Technology
+            </th>
+            <th>
+              Description
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              HTML
+            </td>
+            <td>
+              HyperText markup language
+            </td>
+          </tr>
+          <tr>
+            <td>
+              CSS
+            </td>
+            <td>
+              Cascading Style Sheets
+            </td>
+          </tr>
+          <tr>
+            <td>
+              JS
+            </td>
+            <td>
+              Highlevel programming language JavaScript
+            </td>
+          </tr>
+        </tbody>
+        <!-- <tfoot>
+          <tr>
+            <td>end of table</td>
+          </tr>
+        </tfoot> -->
+      </table>
+    </section>
+    <hr>
+    <section id="form" class="section">
+      <h2>Register From</h2>
+      <!-- Form has methods: GET, POST -->
+      <form method="POST" class="form">
+        <div class="group-form">
+          <label for="username">Your username</label>
+          <input type="text" name="username" placeholder="Tell us your username" id="username" required>
+        </div>
+        <br>
+        <div class="group-form">
+          <label for="email">Your email</label>
+          <input type="email" name="email" placeholder="Tell us your email" id="email" required>
+        </div>
+        <br>
+        <div class="group-form">
+          <label for="password">Your password 😛</label>
+          <input type="password" name="password" placeholder="Enter password" id="password" required>
+        </div>
+        <br>
+        <div>
+          <label>Choose your eye color</label>
+          <input type="radio" name="color" value="blue"> Blue
+          <input type="radio" name="color" value="brown" checked> Brown
+          <input type="radio" name="color" value="green"> Green
+        </div>
+        <br>
+        <div>
+          <label for="country">Choose your country</label>
+          <select id="country">
+            <option value="usa">USA</option>
+            <option value="russia">Russia</option>
+            <option value="belarus">Belarus</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <label for="agreement">Your password</label>
+          <input type="checkbox" name="agreement" id="agreement" required> I agree with the agreement
+        </div>
+        <br>
+        <div>
+          <label for="comment">Your comment</label>
+          <textarea id="comment" rows="10" cols="60"></textarea>
+        </div>
+        <br>
+        <div class="button">
+          <!-- <button type="submit">Send Form</button> -->
+          <input type="submit" value="Send Form">
+        </div>
+      </form>
+    </section>
+    <hr>
+    <section class="section position-relative">
+      <h2>
+        About Frontend
+      </h2>
+      <div class="img-wrap">
+        <img src="./twitter.jpeg" alt="twitter">
+      </div>
+      <p>
+        A web browser is software used to retrieve, present, and traverse information on the WWW. 
+        Typically, <strong>browsers</strong> run on a <em>desktop or laptop computer, tablet, or phone,</em> <br> but as of late a browser 
+        can be found on just about anything (i.e, on a fridge, in cars, etc.).
+        <br>
+        <img width="300" src="https://miro.medium.com/max/820/1*Y4Td-XMRtuFAW_8CpO7KyA.png" alt="frotnend">
+        <span>These images are beautiful</span>
+        <img width="300" src="https://www.iflexion.com/sites/all/themes/iflexion/images/vis-frontend-1.png" alt="frotnend">
+      </p>
+      <p>
+        Headless browsers are a web browser without a graphical user interface that can be controlled from a command line interface programmatically for the purpose of web page automation (e.g., functional testing, scraping, unit testing, etc.). Think of headless browsers as a browser that you can run from the command line that can retrieve and traverse web pages.
+      </p>
+      <p>
+        Whenever the name Front End Development is mentioned, what props up in the mind of some people are the building blocks of HTML, CSS and JavaScript. And Front End developers are often times seen as individuals who play word puzzles with codes to create stuffs that are aesthetically appealing. I think they are seen like children splattering water colours.
+        Image for post
+        Concept by Christian Lasbery
+        Many back end developers I know take pride in the assumption that they are the engine powering the software development cycle. Even if they don’t say it, their demeanor betrays them. Lol.
+        Front End development is a whole lot tougher than the back end role. It’s goes way beyond the building blocks of HTML, CSS and JavaScript. Front End development is an art and at the heart of the software development life cycle.
+        Let me further explain why Front End Development is no cakewalk.
+        <br>
+        1. The front end developer needs to have an In-depth understanding of the product requirements. This understanding helps in mind mapping novel and unique ways to visually interpret the product for a better user experience. The front end developer works closely with the UI/UX designer in trying to create this rich user experience. Because today’s user expect to have great experience, and a poor experience might not give the company a second chance because of stiff competition.
+        <br>
+        2. The front end developer’s role extends way beyond the website. It extends to every interaction the users have with the company, including products and support. Harvard Business Review found that 33% of customers who had a positive experience told 10 or more people about it. And with the growing number of competition out there and companies trying to capture a large chunk of the market share, users impulse is to punish bad service more than they reward delightful service.
+        No matter how powerful a company’s solution is, the product’s aesthetics is the first thing that greets the user’s eye. And a bad user experience can impact negatively on a company’s product.
+        Image for postImage for post
+        <br>
+        3. Beyond aesthetics, the front end developer needs to ensure that the application degrades nicely across all media and handheld devices, and also renders well across all user agents. This will involve testing and debugging.
+        There are a couple of different testing methods as it applies to web development. Functional testing (This looks at a particular piece of functionality on your site and makes sure it does everything you have coded it to do). Unit testing (This tests the smallest bit of code that is responsible for one thing on your site, and examines it individually for correct operation). Testing and debugging is a big part of Front End development.
+        <br>
+        4. The front end developer always has to be responsive to changes in the pre and post software development. He has to be alert for rapid changes triggered by customers’ feedback. He needs to analyze and study users interaction pattern and should be able to deduce why users aren’t interacting smoothly with a particular feature on the application, and should be able to effect changes as quickly as possible without breaking any key feature in the application.
+        <br>
+        5. Web performance. The front end developer needs to be concerned with how well the application is performing across devices. Web performance speaks to the amount of time it takes for your site to load. In resolving performance issues, steps like optimizing images (scaling and compressing images), minifying CSS and JavaScript (removing all unnecessary characters from your code without changing functionality), and serving scripts via a CDN (Content Delivery Network).
+        You can clearly see how front end development plays a crucial role I modern application development. And just like I pointed out earlier, it is a whole lot tougher than back-end development. In my opinion though.
+        You can clearly see how front end development plays a crucial role I modern application development. And just like I pointed out earlier, it is a whole lot tougher than back-end development. In my opinion though.
+        I worked with an IT firm for four(4) years and I was solely in charge of both the front end and back end development of applications. And of the two, the front end development of the application was got me fatigued mentally. Because I had to ensure that the products differed in aesthesis, appeal and look and feel. I was constantly updating the applications based on user feedback and always had to ensure users didn’t have issues with usability and accessibility. I was constantly creating different user experiences for different applications.
+        I am a Full stack software developer with an amazing and creative front end development and UI/UX skills.
+      </p>
+      <p>
+        Whenever the name Front End Development is mentioned, what props up in the mind of some people are the building blocks of HTML, CSS and JavaScript. And Front End developers are often times seen as individuals who play word puzzles with codes to create stuffs that are aesthetically appealing. I think they are seen like children splattering water colours.
+        Image for post
+        Concept by Christian Lasbery
+        Many back end developers I know take pride in the assumption that they are the engine powering the software development cycle. Even if they don’t say it, their demeanor betrays them. Lol.
+        Front End development is a whole lot tougher than the back end role. It’s goes way beyond the building blocks of HTML, CSS and JavaScript. Front End development is an art and at the heart of the software development life cycle.
+        Let me further explain why Front End Development is no cakewalk.
+        <br>
+        1. The front end developer needs to have an In-depth understanding of the product requirements. This understanding helps in mind mapping novel and unique ways to visually interpret the product for a better user experience. The front end developer works closely with the UI/UX designer in trying to create this rich user experience. Because today’s user expect to have great experience, and a poor experience might not give the company a second chance because of stiff competition.
+        <br>
+        2. The front end developer’s role extends way beyond the website. It extends to every interaction the users have with the company, including products and support. Harvard Business Review found that 33% of customers who had a positive experience told 10 or more people about it. And with the growing number of competition out there and companies trying to capture a large chunk of the market share, users impulse is to punish bad service more than they reward delightful service.
+        No matter how powerful a company’s solution is, the product’s aesthetics is the first thing that greets the user’s eye. And a bad user experience can impact negatively on a company’s product.
+        Image for postImage for post
+        <br>
+        3. Beyond aesthetics, the front end developer needs to ensure that the application degrades nicely across all media and handheld devices, and also renders well across all user agents. This will involve testing and debugging.
+        There are a couple of different testing methods as it applies to web development. Functional testing (This looks at a particular piece of functionality on your site and makes sure it does everything you have coded it to do). Unit testing (This tests the smallest bit of code that is responsible for one thing on your site, and examines it individually for correct operation). Testing and debugging is a big part of Front End development.
+        <br>
+        4. The front end developer always has to be responsive to changes in the pre and post software development. He has to be alert for rapid changes triggered by customers’ feedback. He needs to analyze and study users interaction pattern and should be able to deduce why users aren’t interacting smoothly with a particular feature on the application, and should be able to effect changes as quickly as possible without breaking any key feature in the application.
+        <br>
+        5. Web performance. The front end developer needs to be concerned with how well the application is performing across devices. Web performance speaks to the amount of time it takes for your site to load. In resolving performance issues, steps like optimizing images (scaling and compressing images), minifying CSS and JavaScript (removing all unnecessary characters from your code without changing functionality), and serving scripts via a CDN (Content Delivery Network).
+        You can clearly see how front end development plays a crucial role I modern application development. And just like I pointed out earlier, it is a whole lot tougher than back-end development. In my opinion though.
+        You can clearly see how front end development plays a crucial role I modern application development. And just like I pointed out earlier, it is a whole lot tougher than back-end development. In my opinion though.
+        I worked with an IT firm for four(4) years and I was solely in charge of both the front end and back end development of applications. And of the two, the front end development of the application was got me fatigued mentally. Because I had to ensure that the products differed in aesthesis, appeal and look and feel. I was constantly updating the applications based on user feedback and always had to ensure users didn’t have issues with usability and accessibility. I was constantly creating different user experiences for different applications.
+        I am a Full stack software developer with an amazing and creative front end development and UI/UX skills.
+      </p></p>
+      <ul>
+        <li>
+          fghjkl
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <ol>
+        <li><a href="#header">Header</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#table">Table</a></li>
+      </ol>
+      <div class="button">
+        <button>
+          Donate me
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
