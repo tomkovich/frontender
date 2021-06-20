@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libra</title>
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="section-main">
+      <div class="container">
+        <header class="section-main__header">
+          <nav>
+            <ul class="section-main__menu">
+              <li><a href="#">books</a></li>
+              <li><a href="#">help</a></li>
+              <li><a href="#">delivery</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href="#">about</a></li>
+            </ul>
+          </nav>
+          <a href="main.html" class="section-main__logo">
+            <img src="./images/logo.svg" alt="Libra" />
+            <span>Enjoy Reading</span>
+          </a>
+          <div class="section-main__navigation">
+            <div class="section-main__navigation-search">
+              <input type="search" value="search" />
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="section-main__navigation-menu">
+              <ul>
+                <li>
+                  <i class="fas fa-shopping-bag"></i>
+                  <span class="basket-count">0</span>
+                </li>
+                <li>
+                  <i class="fas fa-heart"></i>
+                </li>
+                <li>
+                  <i class="fas fa-question-circle"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="section-main__area">
+          <div class="section-main__categories">
+            <div class="section-main__category">
+              <span>Bestsellers 2020</span>
+            </div>
+            <div class="section-main__category">
+              <span>Top 250</span>
+            </div>
+            <div class="section-main__category">
+              <span>All books</span>
+            </div>
+            <div class="section-main__category">
+              <span>Coming Soon</span>
+            </div>
+          </div>
+          <div class="section-main__slider">
+            <!-- SLIDE -->
+            <div class="section-main__slide">
+              <div class="section-main__slider-img">
+                <img src="./images/book1.jpg" alt="Stephen King" />
+              </div>
+              <div class="section-main__slider-info">
+                <div class="section-main__slider-author">Stephen King</div>
+                <div class="section-main__slider-title">Pet Sematary</div>
+                <div class="section-main__slider-rating">
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star-border.svg" alt="star" />
+                </div>
+                <div class="section-main__slider-description">
+                  Rambling, old, unsmart and comfortable. A place where the
+                  family could settle; the children grow and play and explore.
+                  The rolling vills and meadows of Maine seemed a world away
+                  from the fume-choked dangers of Chicago.
+                </div>
+                <div class="section-main__slider-actions">
+                  <div class="section-main__slider-price">9.99$</div>
+                  <a href="#" class="section-main__slider-buy bottom-border">
+                    Buy
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-main__slider-nav">
+              <div
+                class="section-main__slider-prev section-main__slider-button"
+              >
+                Back
+              </div>
+              <div
+                class="section-main__slider-next section-main__slider-button"
+              >
+                Next
+              </div>
+            </div>
+
+            <div class="section-main__slider-dots">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="section-main__buttons">
+            <a href="#" class="section-main__buttons-signup bottom-border">
+              Sign up
+            </a>
+            <a href="#" class="section-main__buttons-login"> Log in </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-books">
+      <div class="container">
+        <div class="section-title">Books</div>
+        <div class="section-books__filters">
+          <div class="section-books__filters-list">
+            <div class="section-books__filter">
+              <div class="section-books__filter-title">category</div>
+              <select name="category">
+                <option value="money">Money</option>
+                <option value="sport">Sport</option>
+                <option value="psychology">Psychology</option>
+              </select>
+            </div>
+            <div class="section-books__filter">
+              <div class="section-books__filter-title">genre</div>
+              <select name="genre">
+                <option value="fiction">Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="thriller">Thriller</option>
+              </select>
+            </div>
+            <div class="section-books__filter">
+              <div class="section-books__filter-title">year</div>
+              <select name="year">
+                <option value="2021">2021</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+              </select>
+            </div>
+            <div class="clear-filter__btn">x clear</div>
+          </div>
+          <div class="section-books__sort section-books__filter">
+            <div class="section-books__filter-title">sort by</div>
+            <select name="sort">
+              <option value="price">price</option>
+              <option value="popular">popular</option>
+              <option value="sells">sells</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-books__list">
+          <div class="section-books__item">
+            <div
+              class="section-books__item-img"
+              style="background-image: url(./images/book2.jpg)"
+            ></div>
+            <div class="section-books__item-info">
+              <div class="section-books__item-top">
+                <div class="section-books__item-reviews">
+                  <span>241</span>
+                  reviews
+                </div>
+                <div class="section-books__item-rating">
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star-border.svg" alt="star" />
+                </div>
+                <div class="section-books__item-favorite">
+                  <i class="fas fa-heart-broken"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="section-books__item-author">Steve Anderson</div>
+              <div class="section-books__item-title">
+                The Bezos Letters: 14 Principles to Grow Your Business Like
+                Amazon
+              </div>
+              <div class="section-books__item-bottom">
+                <div class="section-books__item-price">89$</div>
+                <a href="#" class="section-books__item-buy bottom-border"
+                  ><span>BUY</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="section-books__item">
+            <div
+              class="section-books__item-img"
+              style="background-image: url(./images/book2.jpg)"
+            ></div>
+            <div class="section-books__item-info">
+              <div class="section-books__item-top">
+                <div class="section-books__item-reviews">
+                  <span>241</span>
+                  reviews
+                </div>
+                <div class="section-books__item-rating">
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star-border.svg" alt="star" />
+                </div>
+                <div class="section-books__item-favorite liked">
+                  <i class="fas fa-heart-broken"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="section-books__item-author">Steve Anderson</div>
+              <div class="section-books__item-title">
+                The Bezos Letters: 14 Principles to Grow Your Business Like
+                Amazon
+              </div>
+              <div class="section-books__item-bottom">
+                <div class="section-books__item-price">89$</div>
+                <a href="#" class="section-books__item-buy bottom-border"
+                  ><span>BUY</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="section-books__item">
+            <div
+              class="section-books__item-img"
+              style="background-image: url(./images/book2.jpg)"
+            ></div>
+            <div class="section-books__item-info">
+              <div class="section-books__item-top">
+                <div class="section-books__item-reviews">
+                  <span>241</span>
+                  reviews
+                </div>
+                <div class="section-books__item-rating">
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star-border.svg" alt="star" />
+                </div>
+                <div class="section-books__item-favorite">
+                  <i class="fas fa-heart-broken"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="section-books__item-author">Steve Anderson</div>
+              <div class="section-books__item-title">
+                The Bezos Letters: 14 Principles to Grow Your Business Like
+                Amazon
+              </div>
+              <div class="section-books__item-bottom">
+                <div class="section-books__item-price">89$</div>
+                <a href="#" class="section-books__item-buy bottom-border"
+                  ><span>BUY</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="section-books__item">
+            <div
+              class="section-books__item-img"
+              style="background-image: url(./images/book2.jpg)"
+            ></div>
+            <div class="section-books__item-info">
+              <div class="section-books__item-top">
+                <div class="section-books__item-reviews">
+                  <span>241</span>
+                  reviews
+                </div>
+                <div class="section-books__item-rating">
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star-border.svg" alt="star" />
+                </div>
+                <div class="section-books__item-favorite">
+                  <i class="fas fa-heart-broken"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="section-books__item-author">Steve Anderson</div>
+              <div class="section-books__item-title">
+                The Bezos Letters: 14 Principles to Grow Your Business Like
+                Amazon
+              </div>
+              <div class="section-books__item-bottom">
+                <div class="section-books__item-price">89$</div>
+                <a href="#" class="section-books__item-buy bottom-border"
+                  ><span>BUY</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="section-books__item">
+            <div
+              class="section-books__item-img"
+              style="background-image: url(./images/book2.jpg)"
+            ></div>
+            <div class="section-books__item-info">
+              <div class="section-books__item-top">
+                <div class="section-books__item-reviews">
+                  <span>241</span>
+                  reviews
+                </div>
+                <div class="section-books__item-rating">
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star-border.svg" alt="star" />
+                </div>
+                <div class="section-books__item-favorite">
+                  <i class="fas fa-heart-broken"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="section-books__item-author">Steve Anderson</div>
+              <div class="section-books__item-title">
+                The Bezos Letters: 14 Principles to Grow Your Business Like
+                Amazon
+              </div>
+              <div class="section-books__item-bottom">
+                <div class="section-books__item-price">89$</div>
+                <a href="#" class="section-books__item-buy bottom-border"
+                  ><span>BUY</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="section-books__item">
+            <div
+              class="section-books__item-img"
+              style="background-image: url(./images/book2.jpg)"
+            ></div>
+            <div class="section-books__item-info">
+              <div class="section-books__item-top">
+                <div class="section-books__item-reviews">
+                  <span>241</span>
+                  reviews
+                </div>
+                <div class="section-books__item-rating">
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star-border.svg" alt="star" />
+                </div>
+                <div class="section-books__item-favorite">
+                  <i class="fas fa-heart-broken"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="section-books__item-author">Steve Anderson</div>
+              <div class="section-books__item-title">
+                The Bezos Letters: 14 Principles to Grow Your Business Like
+                Amazon
+              </div>
+              <div class="section-books__item-bottom">
+                <div class="section-books__item-price">89$</div>
+                <a href="#" class="section-books__item-buy bottom-border"
+                  ><span>BUY</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="section-books__item">
+            <div
+              class="section-books__item-img"
+              style="background-image: url(./images/book2.jpg)"
+            ></div>
+            <div class="section-books__item-info">
+              <div class="section-books__item-top">
+                <div class="section-books__item-reviews">
+                  <span>241</span>
+                  reviews
+                </div>
+                <div class="section-books__item-rating">
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star-border.svg" alt="star" />
+                </div>
+                <div class="section-books__item-favorite">
+                  <i class="fas fa-heart-broken"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="section-books__item-author">Steve Anderson</div>
+              <div class="section-books__item-title">
+                The Bezos Letters: 14 Principles to Grow Your Business Like
+                Amazon
+              </div>
+              <div class="section-books__item-bottom">
+                <div class="section-books__item-price">89$</div>
+                <a href="#" class="section-books__item-buy bottom-border"
+                  ><span>BUY</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="section-books__item">
+            <div
+              class="section-books__item-img"
+              style="background-image: url(./images/book2.jpg)"
+            ></div>
+            <div class="section-books__item-info">
+              <div class="section-books__item-top">
+                <div class="section-books__item-reviews">
+                  <span>241</span>
+                  reviews
+                </div>
+                <div class="section-books__item-rating">
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star-border.svg" alt="star" />
+                </div>
+                <div class="section-books__item-favorite">
+                  <i class="fas fa-heart-broken"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="section-books__item-author">Steve Anderson</div>
+              <div class="section-books__item-title">
+                The Bezos Letters: 14 Principles to Grow Your Business Like
+                Amazon
+              </div>
+              <div class="section-books__item-bottom">
+                <div class="section-books__item-price">89$</div>
+                <a href="#" class="section-books__item-buy bottom-border"
+                  ><span>BUY</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="section-books__item">
+            <div
+              class="section-books__item-img"
+              style="background-image: url(./images/book2.jpg)"
+            ></div>
+            <div class="section-books__item-info">
+              <div class="section-books__item-top">
+                <div class="section-books__item-reviews">
+                  <span>241</span>
+                  reviews
+                </div>
+                <div class="section-books__item-rating">
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star.svg" alt="star" />
+                  <img src="./images/star-border.svg" alt="star" />
+                </div>
+                <div class="section-books__item-favorite">
+                  <i class="fas fa-heart-broken"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="section-books__item-author">Steve Anderson</div>
+              <div class="section-books__item-title">
+                The Bezos Letters: 14 Principles to Grow Your Business Like
+                Amazon
+              </div>
+              <div class="section-books__item-bottom">
+                <div class="section-books__item-price">89$</div>
+                <a href="#" class="section-books__item-buy bottom-border"
+                  ><span>BUY</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="all-books__btn">
+          <a href="/books">all <span>business</span> books</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-banners">
+      <div class="container">
+        <div class="section-banners__list">
+          <div class="section-banners__item">
+            <div class="section-banners__item-info">
+              <div class="section-banners__item-description">
+                For our regular customers there are discounts and draws
+              </div>
+              <a class="bottom-border" href="/shop"><span>In shop</span></a>
+            </div>
+            <div class="section-banners__item-img">
+              <img src="./images/img2.png" alt="img" />
+            </div>
+          </div>
+          <div class="section-banners__item reverse">
+            <div class="section-banners__item-info">
+              <div class="section-banners__item-description">
+                Receive the latest news about new books and discounts
+              </div>
+              <a class="bottom-border" href="/shop"><span>SIGN UP</span></a>
+            </div>
+            <div class="section-banners__item-img">
+              <img src="./images/img1.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-delivery">
+      <div class="container">
+        <div class="section-title">Delivery</div>
+        <div class="section-delivery__description">
+          We deliver books all over the world. Delivery is carried out depending
+          on the country within 2-7 days. If we do not have time to deliver the
+          book within the specified period, you will receive it for free! We try
+          to ship items together. However, sometimes we find it more efficient
+          to dispatch them as soon as they arrive, as opposed to delaying an
+          order whilst we wait for it to arrive in its entirety. We will email
+          you to let you know when your item/s have been dispatched.
+          <a href="#">MORE INFORMATION ABOUT DELIVERY</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cards">
+      <div class="container">
+        <div class="section-cards__list">
+          <div class="section-cards__item">
+            <div class="section-cards__item-title">Lite</div>
+            <div class="section-cards__item-price">$8/mo</div>
+            <div class="section-cards__item-imgs">
+              <img src="./images/book6.png" alt="book" />
+            </div>
+
+            <div class="section-cards__item-info">
+              <span
+                >Subscription to tariff gives you the opportunity to receive
+                monthly:</span
+              >
+              <ul>
+                <li>- a free book of your choice</li>
+                <li>- advantage in delivery</li>
+                <li>- discounts on the purchase of books up to 20%</li>
+              </ul>
+              <div class="section-cards__item-btn">
+                <a href="#" class="bottom-border"><span>Subscribe</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="section-cards__item">
+            <div class="section-cards__item-title">Classic</div>
+            <div class="section-cards__item-price">$19/mo</div>
+            <div class="section-cards__item-imgs">
+              <img src="./images/book3.png" alt="book" />
+              <img src="./images/book4.png" alt="book" />
+            </div>
+
+            <div class="section-cards__item-info">
+              <span
+                >Subscription to tariff gives you the opportunity to receive
+                monthly:</span
+              >
+              <ul>
+                <li>- a free book of your choice</li>
+                <li>- advantage in delivery</li>
+                <li>- discounts on the purchase of books up to 20%</li>
+              </ul>
+              <div class="section-cards__item-btn">
+                <a href="#" class="bottom-border"><span>Subscribe</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="section-cards__item">
+            <div class="section-cards__item-title">Premium</div>
+            <div class="section-cards__item-price">$29/mo</div>
+            <div class="section-cards__item-imgs">
+              <img src="./images/book3.png" alt="book" />
+              <img src="./images/book4.png" alt="book" />
+              <img src="./images/book5.png" alt="book" />
+            </div>
+
+            <div class="section-cards__item-info">
+              <span
+                >Subscription to tariff gives you the opportunity to receive
+                monthly:</span
+              >
+              <ul>
+                <li>- a free book of your choice</li>
+                <li>- advantage in delivery</li>
+                <li>- discounts on the purchase of books up to 20%</li>
+              </ul>
+              <div class="section-cards__item-btn">
+                <a href="#" class="bottom-border"><span>Subscribe</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-menus">
+          <div class="footer-menu">
+            <div class="footer-menu__title">Information</div>
+            <ul>
+              <li><a href="#">help</a></li>
+              <li><a href="#">delivery</a></li>
+              <li><a href="#">conctact</a></li>
+              <li><a href="#">about</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <div class="footer-menu__title">Books</div>
+            <ul>
+              <li><a href="#">bestsellers</a></li>
+              <li><a href="#">top 250</a></li>
+              <li><a href="#">coming Soon</a></li>
+              <li><a href="#">popular</a></li>
+              <li><a href="#">all books</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <div class="footer-menu__title">FAQ</div>
+            <ul>
+              <li><a href="#">how to buy</a></li>
+              <li><a href="#">feedback</a></li>
+              <li><a href="#">discounts</a></li>
+              <li><a href="#">subscribes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">legal information</a></li>
+            <li><a href="#">licenses</a></li>
+          </ul>
+          <div class="footer-rights">
+            all rights reserved. Libra © 2020
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
